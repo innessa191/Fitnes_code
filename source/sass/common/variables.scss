@@ -1,0 +1,36 @@
+@mixin font-face($font-family, $font-weight, $font-style, $font-src) {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    font-display: swap;
+    src: $font-src;
+  }
+}
+
+/* size */
+$tablet-width: 768px;
+$desktop-width: 1366px;
+
+/* color */
+
+$main-grdient: linear-gradient(90deg, #67bbf7 1.33%, #acabf9 99.81%);
+$aditional-gradient: linear-gradient(90deg, #67bbf7 1.33%, #acabf9 99.81%);
+$button-gradient: linear-gradient(90deg, #67bbf7 1.33%, #acabf9 99.81%);
+$base-color: #102654;
+$base-color-light: #A8ADFA;
+$base-color-dark: #030a1a;
+$base-white-color: #ffffff;
+$base-background-color: #f8f9fc;
+$base-shadow-color: #e8e8e8;
+$base-black-color: #000000;
+$base-grey-color: #c8c9cc;
+$bg-grey-light-color: #74819c;
+$text-grey-light-color: #b6bdcc;
+$bg-blue-color: #61a7e9;
+$colorless: rgba(0, 0, 0, 0);
+$aditional-text-color: #103aae;
+$color-blue-color: #2e35ac;
+$tabs-color: #d10a42;
+$banners-color: #ed0233;
+$error-color: #ff121f;

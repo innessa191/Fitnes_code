@@ -1,0 +1,296 @@
+.games {
+  width: 320px;
+  margin: 0 auto;
+  padding: 25px 15px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 60px 45px;
+    padding-top: 61px;
+    padding-bottom: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1366px;
+    padding: 100px 103px;
+  }
+}
+
+.games__container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.games__container picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.games__info-container {
+  padding: 40px;
+  background: linear-gradient(180deg, #B1D7FB 0.04%, #6597C6 8%, #000147 50%);
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding-top: 39px;
+    background: linear-gradient(90deg, #b1d7db 0.05%, #6597c6 27.02%, #000147 99.95%);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 500px;
+    padding: 60px 80px;
+    box-sizing: border-box;
+  }
+}
+
+.games__title-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.games__title {
+  width: 117px;
+  margin: 0;
+  padding: 0;
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 54px;
+  color: $base-white-color;
+  text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    font-size: 82px;
+    line-height: 96px;
+  }
+}
+
+.games__data-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  @media (min-width: $tablet-width) {
+    gap: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 20px;
+  }
+}
+
+.games__data-container {
+  width: 56px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  @media (min-width: $tablet-width) {
+    gap: 4px;
+    width: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 12px;
+  }
+}
+
+.games__data-title {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  color: $base-white-color;
+
+  &::after {
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: $base-white-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+
+    &::after {
+      bottom: -2.5px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 24px;
+
+    &::after {
+      bottom: -6px;
+    }
+  }
+}
+
+.games__date-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3px;
+
+  @media (min-width: $tablet-width) {
+    gap: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 5px;
+  }
+}
+
+.games__data-number {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $base-white-color;
+
+  @media (min-width: $desktop-width) {
+    margin-top: -1px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
+}
+
+.games__data-month {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  color: $base-white-color;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 1px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
+}
+
+.games__text {
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  color: $base-white-color;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10.5px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.games__button {
+  display: block;
+  width: 100%;
+  padding: 24px 40px;
+  box-sizing: border-box;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  color: $base-white-color;
+  outline: 2px solid $base-white-color;
+  outline-offset: -2px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding: 27px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 22px 40px;
+  }
+
+  &:hover {
+    color: $aditional-text-color;
+    background-color: $base-white-color;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $base-black-color;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: $aditional-text-color;
+  }
+
+  &:active {
+    background-color: $base-white-color;
+    outline-color: $base-white-color;
+    color: $base-color;
+  }
+}
+
+.games__button--disabled {
+  background-color: $colorless;
+  outline: 2px solid $base-white-color;
+  color: $base-white-color;
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: default;
+
+  &:focus-visible {
+    background-color: $colorless;
+    outline: 2px solid $base-white-color;
+    color: $base-white-color;
+    opacity: 0.5;
+  }
+}
+
+.games__img-container {
+  width: 290px;
+  height: 290px;
+  background-color: $base-color-light;
+
+  @media (min-width: $tablet-width) {
+    width: 378px;
+    height: 347px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 660px;
+    height: 500px;
+  }
+}

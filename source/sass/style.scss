@@ -1,0 +1,25 @@
+// Vendor
+// ---------------------------------
+
+/* GLOBAL */
+@import "vendor/normalize";
+@import "./common/visually-hidden";
+@import "./common/variables";
+@import "./common/global";
+@import "./common/fonts";
+
+/* BLOCKS */
+
+@import "./blocks/swiper-button";
+@import "./blocks/logo";
+@import "./blocks/hero";
+@import "./blocks/about";
+@import "./blocks/subscriptions";
+@import "./blocks/games";
+@import "./blocks/juri";
+@import "./blocks/advantages";
+@import "./blocks/offers";
+@import "./blocks/faq";
+@import "./blocks/reviews";
+@import "./blocks/feedback";
+@import "./blocks/footer";

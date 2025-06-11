@@ -1,0 +1,220 @@
+.footer {
+  min-width: 320px;
+  background-color: $base-color-dark;
+}
+
+.footer__container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 40px 15px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 45px;
+    padding-top: 45px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1366px;
+    padding: 40px 103px;
+    justify-content: space-between;
+  }
+}
+
+.footer__logo {
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    margin-right: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+}
+
+.footer__list {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  column-gap: 36px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    width: 410px;
+    margin-bottom: 0;
+    margin-right: auto;
+    padding-bottom: 1px;
+    column-gap: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 600px;
+    margin-right: 0;
+    padding-bottom: 0;
+    column-gap: 0;
+    justify-content: space-between;
+  }
+}
+
+.footer__item-link {
+  position: relative;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $base-white-color;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    line-height: 22px;
+  }
+
+  &::after {
+    display: none;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    border-bottom: 1px solid $base-white-color;
+  }
+
+  &:hover::after {
+    display: block;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus-visible::after {
+    display: block;
+    border: 1px solid $base-white-color;
+    top: -5px;
+    left: -10px;
+    right: -10px;
+  }
+
+  &:active::after {
+    border: none;
+  }
+}
+
+.footer__item-link--disabled {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: default;
+
+  &:hover::after,
+  &:focus-visible::after {
+    border: none;
+  }
+}
+
+.footer__social-list {
+  width: 115px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    width: 105px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 95px;
+  }
+}
+
+.footer__social-link {
+  position: relative;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: $base-white-color;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 1px;
+  }
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    background-color: $base-color-dark;
+    mask-position: center;
+    mask-repeat: no-repeat;
+  }
+
+  &:hover {
+    background-color: $bg-grey-light-color;
+  }
+
+  &:hover::after,
+  &:focus-visible::after,
+  &:active::after {
+    background-color: $base-white-color;
+  }
+
+  &:focus-visible {
+    background-color: $aditional-text-color;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $aditional-text-color;
+  }
+}
+
+.footer__social-link--disabled {
+  cursor: default;
+  pointer-events: none;
+  background-color: rgba(255, 255, 255, 0.3);
+
+  &:hover,
+  &:focus-visible,
+  &:active {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.footer__social-link--disabled:hover::after,
+.footer__social-link--disabled:focus-visible::after,
+.footer__social-link--disabled:active::after {
+  background-color: $base-color-dark;
+}
+
+.footer__social-link--vk::after {
+  width: 14px;
+  height: 14px;
+  mask-image: url("/__spritemap#sprite-icon-vk-view");
+}
+
+.footer__social-link--classmates::after {
+  width: 9px;
+  height: 16px;
+  mask-image: url("/__spritemap#sprite-icon-classmates-view");
+}
+
+.footer__social-link--reddit::after {
+  width: 14px;
+  height: 14px;
+  mask-image: url("/__spritemap#sprite-icon-reddit-view");
+}
